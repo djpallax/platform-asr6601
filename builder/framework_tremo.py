@@ -20,17 +20,14 @@ env.Replace(
 # -----------------------------------------------------------------------------
 # Resolve framework path
 # -----------------------------------------------------------------------------
-framework_path = env.GetProjectOption("asr_framework_path")
+platform = env.PioPlatform()
+framework_path = platform.get_package_dir("framework-asr6601")
 
 if not framework_path:
-    print("ERROR: asr_framework_path not defined in platformio.ini")
+    print("ERROR: framework-asr6601 package not found")
     env.Exit(1)
 
-if not os.path.isdir(framework_path):
-    print("ERROR: framework path does not exist:", framework_path)
-    env.Exit(1)
-
-print("Using ASR framework at:", framework_path)
+print("Using ASR framework package at:", framework_path)
 
 # -----------------------------------------------------------------------------
 # Paths

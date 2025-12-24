@@ -1,12 +1,19 @@
 {
-  "name": "ASR6601",
+  "name": "asr6601",
+  "title": "ASR6601 Platform",
   "id": "asr6601",
   "version": "0.1.0",
   "description": "PlatformIO platform for ASR6601 (Ai-Thinker Ra-08)",
-
-  "frameworks": {
-    "tremo": {
-      "package": null
+  "homepage": "https://github.com/djpallax/platform-asr6601",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djpallax/platform-asr6601.git"
+  },
+  "packages": {
+    "framework-asr6601": {
+      "type": "framework",
+      "owner": "djpallax",
+      "version": "*"
     }
   }
 }
