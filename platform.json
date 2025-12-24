@@ -12,8 +12,11 @@
   "packages": {
     "framework-asr6601": {
       "type": "framework",
-      "owner": "djpallax",
-      "version": "*"
+      "version": "*",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/djpallax/framework-asr6601.git"
+      }
     }
   }
 }
