@@ -1,0 +1,12 @@
+{
+  "name": "ASR6601",
+  "id": "asr6601",
+  "version": "0.1.0",
+  "description": "PlatformIO platform for ASR6601 (Ai-Thinker Ra-08)",
+
+  "frameworks": {
+    "tremo": {
+      "package": null
+    }
+  }
+}
